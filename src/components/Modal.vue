@@ -2,13 +2,17 @@
 import axios from "axios";
 import { useStore } from "../store";
 
+
 const store = useStore();
 const props = defineProps(["id"]);
+
+const response = await axios.get("/api/getApiKey");
+const apiKey = response.data;
 
 const movie = (
   await axios.get(`https://api.themoviedb.org/3/movie/${props.id}`, {
     params: {
-      api_key: import.meta.env.TMDB_API_KEY,
+      api_key: apiKey,
       region: "US",
       language: "en",
       include_adult: false,

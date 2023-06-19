@@ -22,7 +22,7 @@
 <script setup>
 import axios from "axios";
 import { useStore } from "../store";
-import { tmdbApiKey } from '/key.js';
+import { TMDB_API_KEY } from '/key.js';
 
 const store = useStore();
 const props = defineProps(["id"]);

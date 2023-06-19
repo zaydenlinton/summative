@@ -11,10 +11,10 @@
   
   <style scoped>
   .hero {
-    background-image: url("https://media.istockphoto.com/id/1355176914/photo/movie-theater-during-the-screening-of-an-animated-movie.jpg?s=612x612&w=0&k=20&c=IMnAa8LT6Da6is7QMo3wJWJFdYFEyHGMaB2XAquIWwY=");
+    background-image: url("https://images.pexels.com/photos/2910028/pexels-photo-2910028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=");
     background-size: cover;
     background-position: center;
-    padding: 100px 0;
+    padding: 200px 0;
     color: #fff;
     text-align: center;
   }
@@ -25,7 +25,7 @@
   }
   
   .title {
-    color:#e6d9d9;
+    color:#ffffff;
     font-size: 48px;
     margin-bottom: 20px;
   }

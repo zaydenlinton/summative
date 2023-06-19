@@ -2,7 +2,7 @@
 
 <template>
   <div class="footer-container">
-    <h4>Follow Our Socials @ZLBUYINGMOVIES</h4>
+    <h4>Follow Our Socials @ZLBUYINGMOVIES AND ENJOY YOUR TIME WATCHINH WONDERFUL MOVIES</h4>
   </div>
 </template>
 

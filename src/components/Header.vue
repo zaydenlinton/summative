@@ -1,25 +1,42 @@
-<script setup>
-import { useRouter } from "vue-router";
-
-const router = useRouter();
-</script>
-
 <template>
-  <div class="header-container">
-    <h1>My Company</h1>
-    <button @click="router.push('/login')">Login</button>
-  </div>
+  <header class="header">
+    <nav class="nav">
+      <ul>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/login">Login</router-link></li>
+        <li><router-link to="/purchase">Purchase</router-link></li>
+        <li><router-link to="/cart">Cart</router-link></li>
+      </ul>
+    </nav>
+  </header>
 </template>
 
 <style scoped>
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header {
+  background-color: #333;
+  padding: 1rem;
 }
 
-button {
-  width: 150px;
-  height: 50px;
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  font-size: 1rem;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.nav ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
 }
 </style>
